@@ -29,7 +29,7 @@ header {
     color: white;
     border-radius: 10px;
     font-variant: small-caps;
-    margin: 5px;
+    margin: 2px;
     padding: 10px;
     transition: 400ms;
 }
@@ -43,7 +43,7 @@ header {
     color: rgb(0, 0, 0);
     border-radius: 10px;
     font-variant: small-caps;
-    margin: 5px;
+    margin: 2px;
     padding: 10px;
     transition: 400ms;
 }
