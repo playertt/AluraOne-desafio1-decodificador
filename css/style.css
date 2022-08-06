@@ -140,6 +140,10 @@ button:nth-child(2):hover{
     text-align: center;
 }
 
+.area-resultado{
+    position: relative;
+}
+
 #textarea-resultado{
     font-size: 20px;
     border: none;
@@ -148,9 +152,16 @@ button:nth-child(2):hover{
     height: 340px;
     border-radius: 10px;
     padding: 10px;
+    display: none;
 }
 
-.textarea-resultado button {
+.areabotaoresultado{
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 30px;
+}
+
+.area-resultado button {
     background: #ffffff;
     color: rgb(4, 0, 228);
     width: 270px;
@@ -166,7 +177,7 @@ button:nth-child(2):hover{
     cursor: pointer;
 }
 
-.textarea-resultado button:hover{
+.area-resultado button:hover{
     background: #d3d3d3;
 }
 

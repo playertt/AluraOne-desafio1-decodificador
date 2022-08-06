@@ -22,6 +22,9 @@ function criptografar(textoParaCriptografar){
     textoCodificado = textoCodificado.join("");
     textAreaResultado.value = textoCodificado;
 
+    document.getElementById('imagemresultadovazio').style.display = 'none';
+    document.getElementById('textarea-resultado').style.display = 'inline';
+    document.getElementById('areabotaoresultado').style.marginTop = '0px'
 }
 
 function decodificar(textoParaCriptografar){
@@ -36,13 +39,16 @@ function decodificar(textoParaCriptografar){
     
     textAreaResultado.value = textoParaCriptografar;
 
+    document.getElementById('imagemresultadovazio').style.display = 'none';
+    document.getElementById('textarea-resultado').style.display = 'inline';
+
 }
 
 function desabilitarBotaoCopiar() {
     if(
         (document.getElementById("textoparacriptografar").value==="")&&
         (document.getElementById("textarea-resultado").value==="")) { 
-        document.getElementById('botaocopiar').disabled = true; 
+        document.getElementById('botaocopiar').disabled = true;
     } else { 
         document.getElementById('botaocopiar').disabled = false;
     }
@@ -63,6 +69,9 @@ function copyToClipBoard() {
 function limparResultado(){
     
     textAreaResultado.value = "";
+    document.getElementById('imagemresultadovazio').style.display = 'inline';
+    document.getElementById('textarea-resultado').style.display = 'none';
+    document.getElementById('areabotaoresultado').style.marginTop = '55px'
 
 }
 
