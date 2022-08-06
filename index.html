@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Challenge 1 - Decodificador</title>
+        <link rel="icon" href="./images/encripted.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+        <header>
+            <span class="criptografar">Criptografar</span>
+            <span class="decodificar">Decodificar</span>
+        </header>
+        <div class="pagina">
+            <div class="edicaodotexto">
+                <div class="textarea">
+                    <textarea 
+                    id="textoparacriptografar"
+                    class="textoparacriptografar"
+                    name="textoparacriptografar"
+                    value="textoparacriptografar"
+                    onkeyup="desabilitarBotaoCopiar()"
+                    placeholder="Digite seu texto."></textarea>
+                </div>
+                <div class="info">&#9432; Apenas letras minúsculas e sem acento.</div>
+                <div class="botoes">
+                    <button onclick="criptografar(textoParaCriptografar)">Criptografar</button>
+                    <button onclick="decodificar(textoParaCriptografar)">Decodificar</button>
+                </div>
+            </div>
+            <div class="resultado">
+                <div class="textarea-resultado">
+                    <textarea 
+                    id="textarea-resultado"
+                    class="textarea-resultado"
+                    name="textarea-resultado"
+                    readonly 
+                    placeholder="Digite seu texto."></textarea>
+                    <div class="tooltip">
+                        <button 
+                        id="botaocopiar" 
+                        onclick="copyToClipBoard()" 
+                        onmouseout="outFunc()" 
+                        disabled>Copiar</button>
+                        <span class="tooltiptext" id="myTooltip">Copiar para clipboard</span>
+                        <div class="limparquadro" onclick="limparResultado()"><img src="./images/eraser.png" alt="limparquadro"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img 
+                class="imagemrodape"
+                src="./images/oraclelogo.png" 
+                alt="Oracle Logo">
+            Dev#TarcisioMendes™ 
+            <img
+                class="imagemrodape"
+                src="./images/aluralogo.png" 
+                alt="Logo Alura">
+            
+        </footer>
+
+        <script type="text/javascript" src="./scripts/script.js"></script>
+        
+	</body>
+</html>
+

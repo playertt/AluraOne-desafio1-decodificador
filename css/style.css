@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #E5E5E5;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    max-height: 60px;
+    background-color: rgb(3, 18, 41);
+    text-align: center;
+    font-size: 32px;
+    font-variant: small-caps;
+    padding-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.criptografar{
+    background: #37146e;
+    color: white;
+    border-radius: 10px;
+    font-variant: small-caps;
+    margin: 5px;
+    padding: 10px;
+    transition: 400ms;
+}
+
+.criptografar:hover{
+    background: #210b44;
+}
+
+.decodificar{
+    background: #b1b1b1;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-variant: small-caps;
+    margin: 5px;
+    padding: 10px;
+    transition: 400ms;
+}
+
+.decodificar:hover{
+    background: #e7e7e7;
+}
+
+.pagina{
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    background: #E5E5E5;
+}
+
+.edicaodotexto{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background: #E5E5E5;
+    margin: 10px;
+    padding: 10px;
+}
+
+#textoparacriptografar{
+    background: #E5E5E5;
+    font-size: 20px;
+    border: none;
+    color: black;
+    width: 70%;
+    height: 340px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.info{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 17%;
+    font-size: 10px;
+    background: #E5E5E5;
+    color:rgb(156, 156, 156)
+}
+
+.botoes {
+    position: relative;
+    margin-top: 20px;
+}
+
+button:nth-child(1){
+    background: #37146e;
+    color: white;
+    width: 270px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-variant: small-caps;
+    transition: 300ms;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+button:nth-child(1):hover{
+    background: #210b44;
+}
+button:nth-child(2){
+    background: #b1b1b1;
+    color: rgb(0, 0, 0);
+    width: 270px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    transition: 300ms;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+button:nth-child(2):hover{
+    background: #d3d3d3;
+}
+
+.resultado{
+    background-color: white;
+    width: 30%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#textarea-resultado{
+    font-size: 20px;
+    border: none;
+    color: black;
+    width: 80%;
+    height: 340px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.textarea-resultado button {
+    background: #ffffff;
+    color: rgb(4, 0, 228);
+    width: 270px;
+    height: 40px;
+    border: 1px solid rgb(4, 0, 228);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    transition: 300ms;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 40px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.textarea-resultado button:hover{
+    background: #d3d3d3;
+}
+
+.textarea-resultado button:active{
+    background: #bebebe;
+}
+
+.textarea-resultado button:disabled{
+    background: #666666;
+    color: #7e7e7e;
+    border: 1px solid rgb(119, 119, 119);
+}
+
+.limparquadro{
+    width: 25px;
+    display: inline;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.limparquadro img{
+    width: 25px;
+}
+
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, rgba(133,0,0,1) 0%, rgba(227,33,36,1) 41%, rgba(227,33,36,1) 45%, rgba(255,255,255,1) 56%, rgba(255,255,255,1) 100%);    text-align: center;
+    font-weight: 600;
+    text-shadow: #000000 1px 1px 4px;
+}
+
+.imagemrodape{
+    vertical-align: middle;
+    height: 40px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 70%;
+    left: 46%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
