@@ -24,7 +24,6 @@ function criptografar(textoParaCriptografar){
 
     document.getElementById('imagemresultadovazio').style.display = 'none';
     document.getElementById('textarea-resultado').style.display = 'inline';
-    document.getElementById('areabotaoresultado').style.marginTop = '0px'
 }
 
 function decodificar(textoParaCriptografar){
@@ -71,7 +70,6 @@ function limparResultado(){
     textAreaResultado.value = "";
     document.getElementById('imagemresultadovazio').style.display = 'inline';
     document.getElementById('textarea-resultado').style.display = 'none';
-    document.getElementById('areabotaoresultado').style.marginTop = '55px'
 
 }
 

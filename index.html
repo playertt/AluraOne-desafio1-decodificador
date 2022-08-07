@@ -36,10 +36,12 @@
             </div>
             <div class="resultado">
                 <div class="area-resultado">
-                    <img 
-                    id="imagemresultadovazio" 
-                    src="./images/empty_result.png" 
-                    alt="imagem para resultado quando vazio">
+                    <div class="imagemresultadovazio">
+                        <img 
+                        id="imagemresultadovazio" 
+                        src="./images/empty_result.png" 
+                        alt="imagem para resultado quando vazio">
+                    </div>
                     <textarea 
                         id="textarea-resultado"
                         class="textarea-resultado"
@@ -47,18 +49,19 @@
                         readonly 
                         placeholder="Digite seu texto.">
                     </textarea>
-                    <div id="areabotaoresultado" class="areabotaoresultado">
-                        <div class="tooltip">
-                            <button 
-                            id="botaocopiar" 
-                            onclick="copyToClipBoard()" 
-                            onmouseout="outFunc()" 
-                            disabled>Copiar</button>
-                            <span class="tooltiptext" id="myTooltip">Copiar para clipboard</span>
-                            <div class="limparquadro" onclick="limparResultado()"><img src="./images/eraser.png" alt="limparquadro"></div>
-                        </div>
+                </div>
+                <div id="areabotaoresultado" class="areabotaoresultado">
+                    <div class="tooltip">
+                        <button 
+                        id="botaocopiar" 
+                        onclick="copyToClipBoard()" 
+                        onmouseout="outFunc()" 
+                        disabled>Copiar</button>
+                        <span class="tooltiptext" id="myTooltip">Copiar para clipboard</span>
+                        <div class="limparquadro" onclick="limparResultado()"><img src="./images/eraser.png" alt="limparquadro"></div>
                     </div>
                 </div>
+                
             </div>
         </div>
         <footer>
