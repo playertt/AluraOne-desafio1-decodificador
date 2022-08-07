@@ -295,6 +295,8 @@ footer{
 
     .botoes {
         width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 
     button:nth-child(1){
