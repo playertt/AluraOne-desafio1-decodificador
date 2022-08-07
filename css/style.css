@@ -22,6 +22,7 @@ header {
     font-variant: small-caps;
     padding-top: 15px;
     font-family: 'Ubuntu', sans-serif;
+    z-index: 9999;
 }
 
 .criptografar{
@@ -264,4 +265,57 @@ footer{
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+  }
+
+  @media screen and (max-width: 960px){
+
+
+    header {
+        height: 6vh;
+        text-align: center;
+    }
+
+    .pagina{
+        display: block;
+    }
+
+    .criptografar{
+        font-size: 22px;
+    }
+    
+    .decodificar{
+        font-size: 22px;
+    }
+    
+
+    .edicaodotexto{
+        width: 90%;
+        height: 69vh;
+    }
+
+    .botoes {
+        width: 90%;
+    }
+
+    button:nth-child(1){
+        width: 150px;
+        height: 40px;
+    }
+
+    button:nth-child(2){
+        width: 150px;
+        height: 40px;
+    }
+
+    .resultado{
+        width: 90%;
+        margin-bottom: 50px;
+        height: 67vh;
+    }
+
+    #textoparacriptografar{
+        width: 85%;
+    }
+
+
   }
